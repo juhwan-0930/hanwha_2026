@@ -13,16 +13,26 @@
   </head>
   <body>
     <header>
-      <div class="header_top">
-        <ul class="partner_logos flex">
+      <div class="header_top height-100p flex flex-ai-c">
+        <ul class="partner_logos flex flex-ai-c height-100p">
           <li>
-            <a href="#"><img src="../imgs/logo-plus-etf-w.svg" alt="" /></a>
+            <a href="#"
+              ><img class="logo-1" src="../imgs/logo-plus-etf-w.svg" alt=""
+            /></a>
           </li>
           <span>|</span>
           <li>
-            <a href="#"><img src="../imgs/logo-pine-w.svg" alt="" /></a>
+            <a href="#"
+              ><img class="logo-2" src="../imgs/logo-pine-w.svg" alt=""
+            /></a>
           </li>
         </ul>
+      </div>
+
+      <div class="inner">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </header>
 
@@ -126,19 +136,35 @@
         min-width: 1080px;
       }
       /* 노말라이즈 끝 */
-      header {
+      .header_top {
         width: 100%;
         height: 40px;
+        background-color: #00000099;
+        justify-content: flex-end;
       }
 
       .partner_logos {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
         color: #fff;
-        padding-right: 100px;
+        padding-right: 36px;
         gap: 24px;
-        background-color: #00000099;
+      }
+
+      .header_top > .partner_logos > li > a > .logo-1 {
+        width: 99px;
+      }
+
+      .header_top > .partner_logos > li > a > .logo-2 {
+        width: 40px;
+      }
+
+      .header_top > .partner_logos > span {
+        font-size: 10px;
+      }
+
+      .inner {
+        width: 100%;
+        height: 96px;
+        background-color: #27262670;
       }
     </style>
   </body>
