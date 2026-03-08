@@ -10,34 +10,258 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
+
   <body>
     <header>
       <div class="header_top height-100p flex flex-ai-c">
-        <ul class="partner_logos flex flex-ai-c height-100p">
+        <ul class="partner_logo_list flex flex-ai-c height-100p">
           <li>
-            <a href="#"
-              ><img class="logo-1" src="../imgs/logo-plus-etf-w.svg" alt=""
-            /></a>
+            <a href="#">
+              <img class="logo_plus" src="../imgs/logo-plus-etf-w.svg" alt="" />
+            </a>
           </li>
           <span>|</span>
           <li>
-            <a href="#"
-              ><img class="logo-2" src="../imgs/logo-pine-w.svg" alt=""
-            /></a>
+            <a href="#">
+              <img class="logo_pine" src="../imgs/logo-pine-w.svg" alt="" />
+            </a>
           </li>
         </ul>
       </div>
 
-      <div class="inner">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="header_inner flex">
+        <div class="header_logo flex flex-ai-c">
+          <a href="#">
+            <img src="../imgs/logo-w.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="header_menu_wrap flex flex-ai-c">
+          <ul class="header_menu flex flex-ai-c">
+            <li class="flex flex-ai-c">
+              <a href="#">펀드 상품</a>
+              <ul class="sub_menu">
+                <li class="flex flex-ai-c">
+                  <a href="#">펀드찾기</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">개인연금</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">퇴직연금</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">TDF</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">PLUS ETF</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="flex flex-ai-c">
+              <a href="#">인사이트</a>
+              <ul class="sub_menu">
+                <li class="flex flex-ai-c">
+                  <a href="#">공지</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">투자정보</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">시황</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">자주 묻는 질문</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="flex flex-ai-c">
+              <a href="#">공시안내</a>
+              <ul class="sub_menu">
+                <li class="flex flex-ai-c">
+                  <a href="#">전체공시</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">편드공시</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">경영공시</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">리츠공시</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">연금공시</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="flex flex-ai-c">
+              <a href="#">회사소개</a>
+              <ul class="sub_menu">
+                <li class="flex flex-ai-c">
+                  <a href="#">한화자산운용 소개</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">글로벌 네트워크</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">운용시스템</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+                <li class="flex flex-ai-c">
+                  <a href="#">채용정보</a>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header_actions flex flex-ai-c">
+          <ul class="flex flex-ai-c height-100p">
+            <li class="lang_box flex flex-ai-c height-100p">
+              <span> KR </span>
+              <a class="lang_btn" href="#">
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="lang_list">
+                <li><a href="#">KR</a></li>
+                <li><a href="#">EN</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="search_btn" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div><img src="../imgs/logo.svg" alt="" /></div>
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                  </div>
+                  <div class="search-warp flex flex-ai-c border-red">
+                    <div class="flex flex-ai-c border-blue">
+                      <span>펀드명을 입력하세요</span>
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a class="menu_btn" href="#">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <style>
-      /* 노말라이즈 */
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2")
+          format("woff2");
+        font-weight: 100;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2")
+          format("woff2");
+        font-weight: 200;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2")
+          format("woff2");
+        font-weight: 300;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+          format("woff2");
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2")
+          format("woff2");
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2")
+          format("woff2");
+        font-weight: 600;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2")
+          format("woff2");
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2")
+          format("woff2");
+        font-weight: 800;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2")
+          format("woff2");
+        font-weight: 900;
+        font-display: swap;
+      }
+
+      body {
+        font-family: "Pretendard", sans-serif;
+      }
+
       body,
       ul,
       li,
@@ -50,6 +274,10 @@
       a {
         color: inherit;
         text-decoration: none;
+      }
+
+      * {
+        box-sizing: border-box;
       }
 
       /* 라이브러리 */
@@ -135,7 +363,7 @@
       .con-min-width {
         min-width: 1080px;
       }
-      /* 노말라이즈 끝 */
+
       .header_top {
         width: 100%;
         height: 40px;
@@ -143,29 +371,255 @@
         justify-content: flex-end;
       }
 
-      .partner_logos {
+      .partner_logo_list {
         color: #fff;
         padding-right: 36px;
         gap: 24px;
       }
 
-      .header_top > .partner_logos > li > a > .logo-1 {
+      .header_top > .partner_logo_list > li > a > .logo_plus {
         width: 99px;
       }
 
-      .header_top > .partner_logos > li > a > .logo-2 {
+      .header_top > .partner_logo_list > li > a > .logo_pine {
         width: 40px;
       }
 
-      .header_top > .partner_logos > span {
+      .header_top > .partner_logo_list > span {
         font-size: 10px;
       }
 
-      .inner {
+      .header_inner {
         width: 100%;
         height: 96px;
         background-color: #27262670;
+        justify-content: space-between;
+        padding: 0 40px;
+      }
+
+      .header_inner > .header_logo > a > img {
+        width: 192px;
+      }
+
+      .header_inner > .header_menu_wrap > .header_menu {
+        gap: 56px;
+      }
+
+      .header_inner > .header_menu_wrap > .header_menu > li > a {
+        font-size: 21px;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      .header_inner > .header_actions > ul {
+        gap: 32px;
+      }
+
+      .header_inner > .header_actions > ul > li > span {
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .header_inner > .header_actions > ul > li > .lang_btn > i {
+        font-size: 14px;
+        color: #fff;
+      }
+
+      .header_inner > .header_actions > ul > .lang_box {
+        gap: 8px;
+      }
+
+      .header_inner > .header_actions > ul > li > .search_btn {
+        font-size: 30px;
+        color: #fff;
+      }
+
+      .header_inner > .header_actions > ul > li > .menu_btn {
+        font-size: 30px;
+        color: #fff;
+      }
+
+      .header_menu > li {
+        position: relative;
+        padding: 0 12px;
+        height: 96px;
+      }
+
+      .sub_menu {
+        position: absolute;
+        top: 100%;
+        left: -10px;
+        min-width: 202px;
+        background-color: #27262650;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+      }
+
+      .sub_menu li {
+        width: 202px;
+        height: 40px;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        transition: background-color 0.1s;
+      }
+
+      .sub_menu li:hover {
+        background-color: #27262690;
+      }
+
+      .sub_menu li:hover > a {
+        color: #fe5b16;
+      }
+
+      .sub_menu li:hover i {
+        display: block;
+      }
+
+      .sub_menu a {
+        color: white;
+        font-size: 18px;
+      }
+
+      .header_menu > li:hover .sub_menu {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .sub_menu i {
+        color: #fe5b16;
+        display: none;
+      }
+
+      .header_actions > ul > .lang_box {
+        position: relative;
+        cursor: pointer;
+      }
+
+      .header_actions > ul > .lang_box > .lang_list {
+        position: absolute;
+        top: 100%;
+        left: -24px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+      }
+
+      .header_actions > ul > .lang_box > .lang_list.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .header_actions > ul > .lang_box > .lang_list > li {
+        background-color: #27262650;
+        color: #fff;
+        font-size: 18px;
+        width: 88px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.1s;
+      }
+
+      .header_actions > ul > .lang_box > .lang_list > li:hover {
+        background-color: #27262690;
+        color: #fe5b16;
+      }
+
+      .header_actions > ul > li > .modal-dialog {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #27262690;
+        display: none;
+      }
+
+      .header_actions > ul > li > .modal-dialog > .modal-content {
+        width: 100%;
+        height: 504px;
+        background-color: #fff;
+      }
+
+      .header_actions
+        > ul
+        > li
+        > .modal-dialog
+        > .modal-content
+        > .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 96px;
+        padding: 90px 40px;
+      }
+
+      .header_actions
+        > ul
+        > li
+        > .modal-dialog
+        > .modal-content
+        > .modal-header
+        > span {
+        font-size: 40px;
+      }
+
+      .header_actions
+        > ul
+        > li
+        > .modal-dialog
+        > .modal-content
+        > .search-warp {
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+        padding: 56px 0;
+      }
+
+      .header_actions
+        > ul
+        > li
+        > .modal-dialog
+        > .modal-content
+        > .search-warp
+        > div {
+        width: 720px;
+        justify-content: space-between;
+        padding: 0 8px;
+      }
+
+      .header_actions
+        > ul
+        > li
+        > .modal-dialog
+        > .modal-content
+        > .search-warp
+        > div
+        > span {
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .header_actions
+        > ul
+        > li
+        > .modal-dialog
+        > .modal-content
+        > .search-warp
+        > div
+        > a
+        > i {
+        font-size: 32px;
       }
     </style>
   </body>
+  <script>
+    $(".lang_box").click(function () {
+      $(".lang_list").toggleClass("active");
+    });
+  </script>
 </html>
